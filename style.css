@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --orange500: hsl(25, 97%, 53%);
+    --white: hsl(0, 100%, 100%);
+    --grey500: hsl(217, 12%, 63%);
+    --grey900: hsl(213, 19%, 18%);
+    --grey950: hsl(216, 12%, 8%);
+    font-size: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--grey950);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: radial-gradient(circle at top right, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    width: 25rem;
+    padding: 2rem;
+    box-shadow:0 25px 60px rgba(0,0,0,.55);
+    border-radius: 1rem;
+    color: var(--white);
+    font-family: "Overpass" sans-serif;
+    text-align: left;
+}
+
+.star {
+    background-color: var(--grey900);
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+p {
+    color: var(--grey500);
+    font-family: "Overpass" sans-serif;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+.rate-box {
+display: flex;
+justify-content: space-between;
+}
+
+.rate {
+    background-color: var(--grey900);
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    font-family: 'Overpass' sans-serif;
+    color: var(--grey500);
+    margin-bottom: 1.5rem;
+}
+
+.rate:hover {
+    background-color: var(--orange500);
+}
+
+.rate:active {
+    background-color: var(--white);
+}
+
+.submit {
+    width: 100%;
+    margin-top: 1rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: var(--orange500);
+    color: var(--grey950);
+    text-transform: uppercase;
+    font-family: 'Overpass' sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.15rem;
+}
+
+.submit:hover {
+    background-color: var(--white);
+}
+
+.back {
+    text-align: center;
+    font-family: "Overpass" sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.result{
+    color: var(--orange500);
+    background-color: var(--grey900);
+    border-radius: 1rem;
+    padding: 0.75rem;
+    display: inline-block;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.para {
+    font-size: 1.2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    background-color: var(--white);
+}
